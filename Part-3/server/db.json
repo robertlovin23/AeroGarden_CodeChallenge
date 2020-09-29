@@ -1,0 +1,42 @@
+{
+    "gardens": [
+        {
+            "name":"harvest",
+            "pods": 6,
+            "wattage":60,
+            "grow_height":24
+        },
+        {
+            "name":"sprout",
+            "pods":3,
+            "wattage":40,
+            "grow_height":18
+        },
+        {
+            "name": "bounty",
+            "pods":9,
+            "wattage":60,
+            "grow_height":36
+        }
+    ],
+    "seed_kits":[
+       {
+          "name": "gourmet_herbs",
+          "pods":[3, 6, 9],
+          "min_grow_height":16,
+          "min_wattage":20
+       },
+       {
+          "name": "cherry_tomatoes",
+          "pods":[6,9],
+          "min_grow_height":24,
+          "min_wattage":40
+       },
+       {
+          "name":"salad_greens",
+          "pods":[3,6],
+          "min_grow_height":14,
+          "min_wattage":20
+       }
+    ]
+}
