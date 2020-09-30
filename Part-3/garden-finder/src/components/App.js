@@ -28,7 +28,7 @@ const App = () => {
 
     const data = await response.json();
 
-    //Filter seed data if the dropdown selection is equal to an array item
+    //Filter seed data if the dropdown selection is equal to an item in the seeds array.
     data.filter(seed => {
       if(seed.name === seedName){
         setSeeds(seed)
@@ -39,8 +39,8 @@ const App = () => {
   //Initialize array to filter gardens
   const newArr = []
 
-  /*Filter Gardens based off grow height, wattage, and the amount of pods each seed pod.
-   Push to the array created above and pass to the Search component */
+  /*Filter Gardens based off grow height, wattage, and the amount of pods in each seed pod.
+   Push to the array created above and pass to the Search component. */
   if(gardens.length){
     gardens.filter(i => {
           if(i.grow_height >= seeds.min_grow_height 
@@ -62,7 +62,6 @@ const App = () => {
   },[])  
 
 
-  //Return
   return (
     <div className="ui container" >
       <Search submitSeedKit={getSeedData}/>
