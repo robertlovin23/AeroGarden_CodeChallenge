@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const List = (props) => {
     //Set props.gardens to a new variable
@@ -9,6 +9,7 @@ const List = (props) => {
         console.log(garden)
         // Capitalize first letter of garden type
         const gardenName = garden.name.charAt(0).toUpperCase() + garden.name.slice(1);
+
         return(
             <div key={index} className="item">
                 <div className="content">

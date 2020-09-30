@@ -1,4 +1,4 @@
-import React, {useState, getState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import Search from '../components/Search';
 import List from '../components/List';
 
@@ -12,11 +12,11 @@ const App = () => {
   //Fetch data from gardens endpoint
   const getGardenData = async () => {
 
-    const response = await fetch(`${url}/gardens`)
+    const response = await fetch(`${url}/gardens`);
 
     const data = await response.json();
 
-    setGardens(data)
+    setGardens(data);
   }
 
   //Fetch data from seed_kits endpoint
@@ -31,13 +31,13 @@ const App = () => {
     //Filter seed data if the dropdown selection is equal to an item in the seeds array.
     data.filter(seed => {
       if(seed.name === seedName){
-        setSeeds(seed)
+        setSeeds(seed);
       }
     })  
   }
   
   //Initialize array to filter gardens
-  const newArr = []
+  const newArr = [];
 
   /*Filter Gardens based off grow height, wattage, and the amount of pods in each seed pod.
    Push to the array created above and pass to the Search component. */
@@ -48,7 +48,7 @@ const App = () => {
             && seeds.pods.includes(i.pods)
             || i.pods > seeds.pods[seeds.pods.length - 1]){
               
-              newArr.push(i)
+              newArr.push(i);
 
             }
     })
@@ -57,7 +57,7 @@ const App = () => {
 
   //Mount getSeedData and getGardenData
   useEffect(() => {
-    getSeedData('gourmet_herbs')
+    getSeedData('gourmet_herbs');
     getGardenData();
   },[])  
 

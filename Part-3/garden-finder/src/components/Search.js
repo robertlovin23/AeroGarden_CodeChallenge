@@ -6,7 +6,7 @@ const Search = (props) => {
 
     //Handle the change of the seed kit
     const handleSeedKitChange = (e) => {
-        setSeedState(e.target.value)
+        setSeedState(e.target.value);
     }
 
     //Submit the selected seed kit
@@ -14,7 +14,7 @@ const Search = (props) => {
         e.preventDefault();
         props.submitSeedKit(
             seedKit
-        )
+        );
     }
 
     //Create the form to check which seed kits should be used
