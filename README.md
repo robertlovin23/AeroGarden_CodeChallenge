@@ -2,7 +2,7 @@
 
 **Part 1** 
 
-I styled two buttons using mixin's from LESS, one with a gradiant background and another with no border-radius.
+I styled two buttons using mixin's from LESS, one with a gradient background and another with no border-radius.
 
 **Part 2**
 
