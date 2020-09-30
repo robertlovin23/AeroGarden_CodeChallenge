@@ -10,7 +10,7 @@ I used the Magento style guide to determine how to move a block element before a
 
 **Part 3**
 
-I created a React App that loops through the "seed_kit" array and tells a user which garden's would be the best based off the attributes of the seed kit.
+I created a React App that loops through the "seed_kit" array and tells a user which garden's would be the best based off the attributes of the selected seed kit.
 
 To start this project up, change to the **'Part-3/garden-finder'** directory, and in the command line type in **'npm start'**.
 
